@@ -19,7 +19,7 @@
             :root {
                 --light-color: rgb(243, 236, 228);
                 --dark-color: rgb(20, 18, 18);
-                --colorful-color: rgb(77, 11, 11);
+                --colorful-color: rgb(57, 46, 37);
             }
             
             body {
@@ -29,12 +29,14 @@
             
             .header {
                 background-image: url("pytorch-stolen.bmp");
-  
+                
+                top: 0px;
                 height: 30em;
                 width: 100vw;
                 background-size:cover;
                 background-position: left;
-                position: absolute
+                
+                margin-bottom: 4em;
             }
             
             
@@ -67,10 +69,36 @@
                 font-weight: 500;
             }
             
+            .bar {
+                /* background-color: blanchedalmond; */
+                list-style: none;
+
+                padding-left: 1em;
+                padding-right: 1em;
+                margin-top: 2em;
+                padding-top: 0;
+
+                display: inline-block;
+
+                /* box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+                border-radius: 7px; */
+            }
+            
+            .bar a {
+                float: left;
+                color: #ffffff;
+                text-align: center;
+                padding: 0.5em 16px;
+                text-decoration: none;
+                font-size: 20px;
+                font-family: "Open Sans";
+                font-weight: 700;
+            }
+            
    
-            .text {
+            .cooltext {
                 margin-left: 3em;
-                margin-top: 7em;
+                padding-top: 6em;
                 
                 font-family: Vafle, "Open Sans";
                 font-weight: 400;
@@ -78,6 +106,16 @@
                 
                 line-height: 1.25em;
                 letter-spacing: 0.05em;
+                
+                font-size: 2em;
+            }
+            
+            .text {
+                margin-left: 3em;
+                
+                font-family: Vafle, "Open Sans";
+                font-weight: 400;
+                color: var(--light-color);
                 
                 font-size: 2em;
             }
@@ -112,13 +150,12 @@
             <img id="hang" src="kilroy.png">
             <a href="#">Home</a>
             <a href="#">Publications</a>
-            <a href="#">Resume</a>
-            <a href="#">Other</a>
+            <a href="#">Rants</a>
         </div>
         
         
         <div class="header">
-            <div class="text">
+            <div class="cooltext">
                 <div class="fill">
                     XUYANG
                 </div>
@@ -145,6 +182,31 @@
                 </div>
                 
             </div>
+            
+            <div class="bar text">
+                <a href="#">Email</a>
+                <a href="#">Github</a>
+                <a href="#">Resume</a>
+                <a href="#">IRC</a>
+            </div>    
+        </div>
+        
+        <div class="text">    
+            Hi! I made a new site!!
+            
+            <br> 
+            <br> 
+            
+            New site!!
+            
+            <br>
+            
+            <img src="rave-party.gif" style="height: 8em">
+            
+            <br>
+            <br> 
+            
+            I usually check my email at least once a day, but if you message me on IRC I typically reply in milliseconds.
         </div>
           
     </body>
